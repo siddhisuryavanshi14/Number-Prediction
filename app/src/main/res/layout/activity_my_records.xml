@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyRecordsActivity"
+    android:background="@color/colorAccent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvEasy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="20dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_above="@+id/cvNormal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/txtHighScoreEasy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Highest Score (Easy)"
+                android:textColor="@color/colorAccent"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/txtNameEasy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@id/txtHighScoreEasy"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/txtPrintNameEasy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_toRightOf="@id/txtNameEasy"
+                android:layout_below="@+id/txtHighScoreEasy"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/txtAttemptsEasy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attempts :"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@id/txtNameEasy"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/txtPrintAttemptsEasy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_toRightOf="@+id/txtAttemptsEasy"
+                android:layout_below="@id/txtPrintNameEasy"
+                android:text="0"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="50dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/txtHighScoreNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Highest Score (Normal)"
+                android:textColor="@color/colorAccent"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/txtNameNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@id/txtHighScoreNormal"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/txtPrintNameNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_toRightOf="@id/txtNameNormal"
+                android:layout_below="@+id/txtHighScoreNormal"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/txtAttemptsNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attempts :"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@id/txtNameNormal"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/txtPrintAttemptsNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_toRightOf="@+id/txtAttemptsNormal"
+                android:layout_below="@id/txtPrintNameNormal"
+                android:text="0"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_below="@+id/cvNormal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/txtHighScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Highest Score (Hard)"
+                android:textColor="@color/colorAccent"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/txtNameHard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@id/txtHighScore"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/txtPrintNameHard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_toRightOf="@id/txtNameHard"
+                android:layout_below="@+id/txtHighScore"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/txtAttemptsHard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attempts :"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@id/txtNameHard"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/txtPrintAttemptsHard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_toRightOf="@+id/txtAttemptsHard"
+                android:layout_below="@id/txtPrintNameHard"
+                android:textSize="18sp"
+                android:text="0"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

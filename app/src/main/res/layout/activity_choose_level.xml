@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseActivity"
+    android:background="@color/colorAccent">
+
+    <ImageView
+        android:id="@+id/txtHeadingFront"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/choose"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/btnEasy"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Easy (2 digits)"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/txtHeadingFront"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic|bold"
+        android:padding="7dp"/>
+
+    <Button
+        android:id="@+id/btnNormal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Normal (3 digits)"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/btnEasy"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        android:textColor="@color/colorAccent"
+        android:paddingVertical="7dp"/>
+
+    <Button
+        android:id="@+id/btnHard"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Hard (4 digits)"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/btnNormal"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        android:textColor="@color/colorAccent"
+        android:padding="10dp"/>
+
+</RelativeLayout>

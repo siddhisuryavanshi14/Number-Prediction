@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#0066ff"
+    app:cardCornerRadius="60dp">
+
+    <ImageView
+        android:id="@+id/txtHeadingback"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo"
+        android:textSize="64sp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+
+    <Button
+        android:id="@+id/btnPlayGame"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Play Game"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:shadowColor="#4a148c"
+        android:drawableLeft="@drawable/ic_play"
+        android:paddingHorizontal="18dp"/>
+
+    <Button
+        android:id="@+id/btnMyRecords"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnPlayGame"
+        android:background="@color/colorPrimary"
+        android:text="My Records"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:shadowColor="#4a148c"
+        android:drawableLeft="@drawable/ic_records"
+        android:paddingHorizontal="18dp"
+        />
+
+    <Button
+        android:id="@+id/btnHelp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnMyRecords"
+        android:background="@color/colorPrimary"
+        android:text="Help"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:shadowColor="#4a148c"
+        android:drawableLeft="@drawable/ic_help"
+        android:paddingHorizontal="18dp" />
+
+    <ImageButton
+        android:id="@+id/ibInfo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="340dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/mainActivity"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:shadowColor="#4a148c"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_info"
+        android:outlineAmbientShadowColor="#000000"
+        />
+
+    <ImageButton
+        android:id="@+id/ibVolume"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="340dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/mainActivity"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:shadowColor="#4a148c"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_volume_up"
+        android:outlineAmbientShadowColor="#000000"
+        />
+
+
+
+</RelativeLayout>

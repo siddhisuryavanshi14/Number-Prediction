@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/colorAccent"
+    android:scaleY="1">
+
+    <TextView
+        android:id="@+id/txtEnterNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:text="Enter Number:"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginVertical="15dp"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:maxLength="5"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_below="@+id/txtEnterNumber"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etInput"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:text="check"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

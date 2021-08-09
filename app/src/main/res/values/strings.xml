@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Number Prediction</string>
+    <string name="number_prediction">Number Prediction</string>
+    <string name="preferences_file_name">HighScore Preferences</string>
+    <string name="how_to_play_1">Number Prediction is a simple game of numbers where the Player guesses the secret number generated
+        by the Computer or Device. There will be 3 levels (Easy,Normal,Hard).
+    </string>
+    <string name="easy_level">1. In Easy level, when the Player guesses a number the Player will be indicated if the guessed number is higher or
+        lower to the secret number. In this level, the secret number would be of two digits.</string>
+
+    <string name="normal_level">2. In Normal level, when the Player guesses a number the Player will be indicated if the guessed number is higher or
+    lower to the secret number. In this level, the secret number would be of three digits.</string>
+
+    <string name="hard_level">3. In Hard level, when the Player guesses a number the Player will be indicated if the guessed number is higher or
+    lower to the secret number. In this level, the secret number would be of four digits.</string>
+</resources>
